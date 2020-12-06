@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #1f7eb4;
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+.page {
+  padding: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+button,
+input[type='submit'] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 1em 0;
+}
+/* general */
+body {
+  font-family: 'Roboto';
+}
+
+/* header */
+#header {
+  display: flex;
+  background-color: #e02525;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .title {
+  margin: 0;
+  padding: 0.1rem;
+  color: #ffffff;
+}
+
+#header .auth-options {
+  height: 100%;
+  display: flex;
+}
+
+#header .auth-options button {
+  background-color: #c21717;
+  padding: 0 1rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+#header .auth-options button:hover {
+  background-color: #be3a3a;
+}
+
+.form label,
+.form input {
+  display: block;
+}
+
+.form input {
+  margin-bottom: 1rem;
+}
+
+.form label {
+  margin-bottom: 0.2rem;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'] {
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid #c7c0c0;
+  background-color: #ece2e2;
+  font-size: 1.1rem;
+}
+
+.form input:focus {
+  border: 1px solid #53a7ec;
+  box-shadow: inset 0px 0px 5px #315d77;
+  outline: none;
+}
+
+.form input[type='submit'] {
+  padding: 0.3rem;
+  border: 1px solid #6b926b;
+  border-radius: 8px;
+  background-color: #619b72;
+  font-size: 1.1rem;
+}
+
+/* error notice */
+
+.error-notice {
+  border: 1px solid #d17272;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0c2c2;
+}
+
+.error-notice button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #df2929;
+  color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1.2rem;
+  }
+  #header .auth-options button {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+}
